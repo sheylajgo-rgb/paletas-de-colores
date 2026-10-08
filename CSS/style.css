@@ -11,4 +11,8 @@ body{
     font-size: 1rem;
 }
 header{
+    display: flex;
+    justify-content: space-between; /* envía el título hacia la izquierda y el menú de inicio a la derecha */
+    align-items: center; /* alinea ambos contenido al centro */
+    padding: 20px; /* agrega espacio interior, para que no quede pegados al borde */
 }
