@@ -27,19 +27,23 @@
       <p>Somos una agencia de branding que produce propuestas visuales para más de 300 clientes en distintas ciudades.</p>      
       <p>¡Te invitamos a que  explores nuestra colección de paletas de colores!</p>
      
-    <!-- tarjeta de paletas de colores -->  
+    <!-- encabezado para las tarjeta de paletas de colores -->  
     <section id="paletas" >
         <h2> Paletas de colores opuestos</h2>
         <p> Encuentra combinaciones perfecta con colores opuestos </p>
-        
-        <div class="contenedor de paletas">
-            <div class="color rosa"></div>
-            <div class="color lila"></div>
-            <div class="color celeste"></div>
-            <div class="color beige"></div>
-            <div class="color verde"></div>
-            <div class="color durazno"></div>
-        </div>
+
+    <!-- contenderes de las tajetas de colores -->
+        <article class="contenedor-paletas"> /* article agrupa una tarjeta de paletas de colores y el "contenedor-paletas" señala lo que se encuentra en su interior */
+
+            <div class="paletas"></div> /* en class paletas se encuentra los 6 colores seleccionados; los cuales hay que organizarlos con FLEXBOX */
+
+             <div class="color rosa"></div> /* "color" permite aplicar el mismo tamaño a todos los curadros */
+             <div class="color lila"></div> /* denominación de color "lila" permite asignar un color diferente a cada cuadro */
+             <div class="color celeste"></div>
+             <div class="color beige"></div>
+             <div class="color verde"></div>
+             <div class="color durazno"></div>
+        </article>
       </section>
     </main>
 </body>
