@@ -3,16 +3,50 @@
 *{
  box-sizing: border-box;
 }
-html{
+html {
     font-size: 100%;
 }
-body{
+body {
     font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     font-size: 1rem;
+    margin: 0; /* hace que la pagina se vea sin bordes */
 }
-header{
+header {
     display: flex;
+    flex-direction: row;
     justify-content: space-between; /* envía el título hacia la izquierda y el menú de inicio a la derecha */
     align-items: center; /* alinea ambos contenido al centro */
     padding: 20px; /* agrega espacio interior, para que no quede pegados al borde */
+    color: hsl(240, 95%, 5%);
+    background-color: hsl(298, 27%, 83%); /* coloca el fondo de un color determinado */
+}
+header h1 {
+    margin: 0;
+    color: hsl(240, 95%, 5%);
+}
+nav ul {
+    display: flex; /* coloca los elementos en fila */
+    gap: 30px; /* el gap separa inicio y paletas */
+    list-style: none; /* elimina los puntos de la lista */
+    margin: 0;
+    padding: 0;
+}
+nav a {
+    text-decoration: none; /* elimina el subrayado de la lista */
+    color: hsl(240, 95%, 5%);
+    font-size: 18px;
+}
+main {
+    text-align: center; /* se alinieo todo la bienvenida al centro */
+    padding: 20px 20px;
+}
+main h2 {
+    font-size: 30px;
+    color: hsl(240, 95%, 5%);
+    margin-bottom: 20px;
+}
+main p {
+    font-size: 18px;
+    color: hsl(240, 95%, 5%);
+    line-height: 1.6;
 }
